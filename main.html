@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Maintenance</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+    }
+
+    .maintenance {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #ffdd59;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .game {
+      margin-top: 40px;
+      text-align: center;
+      background: rgba(0,0,0,0.2);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+
+    button {
+      padding: 10px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: #ffdd59;
+      color: #333;
+      margin-top: 15px;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    #score {
+      margin-top: 15px;
+      font-size: 1.2rem;
+    }
+
+    footer {
+      margin-top: 50px;
+      padding: 15px;
+      background: rgba(0,0,0,0.4);
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="maintenance">
+    <h1>⚠ Site Under Maintenance ⚠</h1>
+    <p>Sorry, the site is currently under maintenance. Please check back later.</p>
+  </div>
+
+  <div class="game">
+    <h2>Mini Game: Click as Fast as You Can!</h2>
+    <button onclick="addScore()">Click Me!</button>
+    <p id="score">Score: 0</p>
+  </div>
+
+  <footer>
+    &copy; 2025 NeuraCraft. All rights reserved.
+  </footer>
+
+  <script>
+    let score = 0;
+
+    function addScore() {
+      score++;
+      document.getElementById('score').textContent = "Score: " + score;
+    }
+  </script>
+
+</body>
+</html>
