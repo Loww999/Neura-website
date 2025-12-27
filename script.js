@@ -1,4 +1,4 @@
-const API_STATUS_URL = "http://127.0.0.1:8000/status";
+const API_STATUS_URL = "http://159.65.128.165:9598/status";
 
 const minigames = ["Survival Vanilla", "SkyWars", "Crystal pvp", "Duels", "Survival economy", "Tnt Run"];
 let index = 0;
@@ -21,4 +21,5 @@ async function updateServerStatus() {
 }
 
 updateServerStatus();
+
 setInterval(updateServerStatus, 30000);
