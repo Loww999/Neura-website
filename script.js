@@ -1,3 +1,4 @@
+//  © 2025 NeuraCraft™. All Rights Reserved.
 const API_STATUS_URL = "http://159.65.128.165:9598/status";
 
 const minigames = ["Survival Vanilla", "SkyWars", "Crystal pvp", "Duels", "Survival economy", "Tnt Run"];
@@ -21,5 +22,5 @@ async function updateServerStatus() {
 }
 
 updateServerStatus();
-
 setInterval(updateServerStatus, 30000);
+
